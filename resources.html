@@ -7,6 +7,7 @@
   <title>Resources — Techtrys Consulting</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
@@ -70,7 +71,7 @@
             <span class="tag tag-blue">White Paper</span>
             <span class="tag tag-green">45 pages</span>
           </div>
-          <button class="btn btn-primary btn-sm" style="align-self:flex-start" onclick="alert('Thank you for your interest! In production, this would open a download/gate form.')">Download Free →</button>
+          <button class="btn btn-primary btn-sm" style="align-self:flex-start" onclick="showToast('Thank you for your interest! In production, this would open a download/gate form.')">Download Free →</button>
         </div>
         <div class="card reveal" style="display:flex;flex-direction:column;padding:2rem">
           <div style="font-size:2.5rem;margin-bottom:1rem">📊</div>
@@ -80,7 +81,7 @@
             <span class="tag tag-purple">Template</span>
             <span class="tag tag-cyan">Excel + Guide</span>
           </div>
-          <button class="btn btn-primary btn-sm" style="align-self:flex-start" onclick="alert('Thank you for your interest! In production, this would open a download/gate form.')">Download Free →</button>
+          <button class="btn btn-primary btn-sm" style="align-self:flex-start" onclick="showToast('Thank you for your interest! In production, this would open a download/gate form.')">Download Free →</button>
         </div>
       </div>
 
@@ -166,7 +167,7 @@
         <p>Get our latest white papers, guides, and industry insights delivered to your inbox.</p>
       </div>
       <div style="max-width:480px;margin:0 auto" class="reveal">
-        <form onsubmit="alert('Thank you! In production, this would subscribe you to our mailing list.');return false" style="display:flex;gap:.75rem">
+        <form onsubmit="showToast('Thank you! In production, this would subscribe you to our mailing list.');return false" style="display:flex;gap:.75rem">
           <input type="email" placeholder="Enter your work email" required class="form-input" style="flex:1">
           <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>

@@ -155,6 +155,25 @@ function initTestimonialCarousel() {
   });
 }
 
+/* --- Toast Notification --- */
+function showToast(message, icon) {
+  icon = icon || '✓';
+  var container = document.querySelector('.toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'toast-container';
+    document.body.appendChild(container);
+  }
+  var toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.innerHTML = '<span class="toast-icon">' + icon + '</span>' + message;
+  container.appendChild(toast);
+  setTimeout(function() {
+    toast.classList.add('toast-out');
+    setTimeout(function() { toast.remove(); }, 300);
+  }, 4000);
+}
+
 /* --- Counter Animation --- */
 function initCounterAnimation() {
   var counters = document.querySelectorAll('.stat-value[data-target]');
